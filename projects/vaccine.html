@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<title>DATA Club Vaccine Challenge</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 120px;background: #222;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+img {
+    max-width: 100%;
+	width: auto;
+	max-height: 400px;
+    height: auto;
+}
+img {
+  border: 5px solid #555;
+}
+</style>
+<body class="w3-black">
+
+
+<!-- Page Content -->
+
+  <!-- Header/Home -->
+  <header class="w3-container w3-padding-32 w3-center w3-light-grey" id="home">
+    <h1 class="w3-header"><span class="w3-hide-small"></span>Vaccine Distribution Challenge</h1>
+	
+
+	<p>Northeastern's DATA Club Challenge to visualize, model, and analyze the impact of US Vaccine Distribution efforts.</p>
+	
+   <h2>Abstract</h2>
+	<p style="text-align:left;font-size:16px;margin-left:50px;margin-right:50px">Our approach focuses on modeling the quantitative impact of vaccination on COVID-19 case and death counts as well as analyzing current and potential distribution infrastructure across the United States. The pandemic is modeled via a dynamic SEIR model with varying transmission rates fit to historical case data provided by the Institute for Health Metrics and Evaluation of the University of Washington. The fatality data are generated using an overall fatality rate of 1% and the impact of vaccinations is explored by fitting a 4% mean fatality rate to those who have been vaccinated. The model indicates that while the vaccine has only reduced the daily number of new cases by 10-15%, it has prevented upwards of 25% of the daily deaths. It also revealed that if the US had administered 100% of our vaccine supply instead of 78%, we would have already been saving an additional 100 lives every day.</p>
+    <p style="text-align:left;font-size:16px;margin-left:50px;margin-right:50px">To help inspire solutions, an interactive Tableau Dashboard displays potential COVID-19 vaccination sites on a national level. Since there is no federal organization on vaccination sites, the worksheet shows all CVS pharmacies, Walmart superstores, indoor arenas and outdoor stadiums in the United States to highlight the existing infrastructure. Each state is given a ranking based on the number of sites, which can be compared with its relative population. While this is not a cure-all, examining these ratios as well as counties devoid of possible vaccination sites can give policymakers a better understanding of the geographical and logistical challenges hindering vaccination progress and costing lives.</p>
+	<br>
+	<h3>Fitting Model</h3>
+	<img src="../files/seirFit2.gif" alt = "SEIR Model Fitting" width="auto" style="float:center">
+	<br>
+	<br>
+	<h3>Model Compared to Historical Data</h3>
+	<img src="../files/modelVsActual.png" alt = "SEIR Model vs Actual" width="auto" style="float:center">
+	<br>
+	<br>
+	<h3>Modelled Results of Early Targeted Vaccination Efforts</h3>
+	<img src="../files/deathModelVax.png" alt = "SEIR Model vs Actual" width="auto" style="float:center">
+	<br>
+	<br>
+	<a style = "font-size:20px" href="https://github.com/justinmiller33/vaccine-distribution">See full methodology on GitHub</a>
+    <!-- Footer -->
+  <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+
+  
+<a href="https://www.w3schools.com">
+	</i>
+      <!-- End footer -->
+  </footer>
+
+<!-- END PAGE CONTENT -->
+</div>
+
+</body>
+</html>
