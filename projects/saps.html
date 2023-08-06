@@ -15,12 +15,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 #main {margin-left: 120px}
 /* Remove margins from "page content" on small screens */
 @media only screen and (max-width: 600px) {#main {margin-left: 0}}
-img {
-    max-width: 100%;
-	width: auto;
-	max-height: 400px;
-    height: auto;
-}
+
 img {
   border: 5px solid #555;
 }
@@ -33,14 +28,22 @@ img {
   <!-- Header/Home -->
   <header class="w3-container w3-padding-32 w3-center w3-light-grey" id="home">
     <h1 class="w3-header"><span class="w3-hide-small"></span>Sentiment Analysis of Public Stockholders</h1>
-	
 
 	<p>An open source project to scrape and test Discourse-Based Trading Advice.</p>
-	<img title = "Stock Chart"style="width:60%"src="../files/stockPic.jpg">
-	<p>"Buy All" policy for the r/RobinHoodPennyStocks forum (month long hold). Measured in %change from start of pandemic. n = 4800. </p>	
-<br>
+	<img title = "Stock Chart"style=""src="../files/Stock Related Forums_sp500_comparison.jpg">
+	<img title = "Stock Chart ROI"style=""src="../files/Stock Related Forums_return_factors.jpg">
+	<p>"Buy All" policy for the 7 forums. Measured in total value and ROI from data availability. n = 30087. </p>	
+	<br>
+
+	<img title = "Sector Breakdown"style="width:50%"src="../files/Stock Related Forums_sector_breakdown.jpg">
+	<p>Sector breakdown for hypothetical forum-based Mutual Fund compared to Vangaurd's growth & total market.</p>	
+	<p>Conspicuously low-tech, overrepresented healthcare and comms sectors.</p>
+	<br>
+
+	<img title = "Leading Equities"style="width:50%"src="../files/profit_leaders_fast.gif">
+	<p>Real time raw value leaders as recommendations are posted (compared to an initial investment in INDEXSP).</p>	
 	
-   <h2>Sources Scraped (Discontinued October 2020)</h2>
+   <h2>Sources Scraped (V1 support deprecated October 2020)</h2>
 	<p>-r/Pennystocks: 6138 tickers With financial data since 07/01/2020</p>
 	<p>-r/RobinHoodPennyStocks: 4800 tickers with financial data since 03/19/2020</p>
 	<p>-r/Stocks: 18669 tickers with financial data since 07/31/2017</p>
@@ -48,10 +51,26 @@ img {
 	<p>-r/StockMarket: 1775 tickers with financial data since 03/29/2019</p>
 	<p>-r/Robinhood: 1279 tickers with financial data since 03/09/2020</p>
 	<p>-r/Investing: 10008 tickers with financial data since 01/01/2018 </p>
-	<br>	
-	<p>TOTAL: 44047 posts scraped with accompanying interday and intraday data</p>
-	<p>CONCLUSIONS: Sizable returns at start of pandemic across all forums. Then similar returns to market once volatility dies down.</p>
+	<p>TOTAL: 30087 valid mentions scraped of 967 unique NYSE equities.</p>
 	<br>
+	
+	<img title = "Leading Equities"style="width:50%"src="../files/composition.jpg">
+	<br>
+	<br>
+	<h2>Summary</h2>
+	<p>Purchasing equities proportionally to recommendations on public forums can create a highly diversified portfolio capable of 
+	casting a wide net around up and coming small/mid-cap stocks. While the short four year timespan may only reflect a symptom of the COVID-19 pandemic volatility, it warrants further investigation.<p>
+	
+	 <h2>Next Steps (V2 support & trial Mutual Fund)</h2>
+	 
+	 <p>Developing V2 live-stream recommendation gathering since pushshift support has ended.</p>
+	 <p>Developing trade bundling and submission software for use on a personal account.</p>
+	 <p>Key remaining issues include pipeline safegaurds, cash/fund balancing as data flows in and fee/commision minimization</p>
+	 
+	 <br>
+	 
+
+	
 	<a style = "font-size:20px" href="https://www.kaggle.com/justinmiller/reddit-pennystock-data">See full data on Kaggle</a>
 	<br>
 	<a style = "font-size:20px" href="https://github.com/justinmiller33/SAPS-public">See full methodology on GitHub</a>
